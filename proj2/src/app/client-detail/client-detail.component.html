@@ -1,0 +1,10 @@
+<div *ngIf="clienteArg">
+  <p>Detalles del cliente</p>
+
+  <p>Id: {{ clienteArg.id }}</p>
+  <p>Nombre: {{ clienteArg.nombre }}</p>
+  <p>Apellido: {{ clienteArg.apellido }}</p>
+  <p>Vip: {{ clienteArg.vip ? "Si" : "No" }}</p>
+
+  <button (click)="borrar()">Borrar</button>
+</div>
