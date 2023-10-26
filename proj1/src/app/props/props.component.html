@@ -1,0 +1,9 @@
+<p>props works!</p>
+
+<button (click)="habilitarDeshabilitar()">
+  {{ botonHabilitado ? "Deshabilitar" : "Habilitar" }}
+</button>
+<p>{{ botonHabilitado }}</p>
+<button [disabled]="botonHabilitado">Aceptar</button>
+
+<img style="width: 100px; height: 100px" [src]="heroImageUrl" />

@@ -8,10 +8,11 @@ import { Hero } from '../hero';
 })
 export class PruebaComponent {
   valor = 'Hola';
-  heroe: Hero = new Hero();
+  heroe: Hero | undefined;
 
   public func() {
-    this.valor = 'Chau';
+    this.heroe = new Hero();
+    this.heroe.nombre = 'superman';
   }
 
   public mostrarNombre() {
