@@ -1,0 +1,23 @@
+<div [ngClass]="misClases">Hola Mundo!</div>
+
+<p class="uno dos tres"></p>
+
+<button (click)="cambiar()">Cambiar</button>
+
+<p>{{ sayHello() }}</p>
+
+<nav>
+  <a routerLink="/home" routerLinkActive="active">Home</a> |
+  <a
+    routerLink="/about"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >About</a
+  >
+  | <a routerLink="/about/uno" routerLinkActive="active">Uno</a> |
+  <a routerLink="/about/dos" routerLinkActive="active">Dos</a>
+  |
+  <a routerLink="/chau/4" routerLinkActive="active">Chau</a>
+</nav>
+
+<router-outlet></router-outlet>
